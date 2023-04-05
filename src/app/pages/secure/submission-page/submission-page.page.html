@@ -1,0 +1,77 @@
+
+
+<ion-content class="ion-padding">
+  <div class="thank-you-message">
+    <ion-icon name="checkmark-circle-outline" class="animated bounceIn"></ion-icon>
+    <h1>YOUR SUBMISSION HAS BEEN RECEIVED!</h1>
+    <h2>Thank you for taking the time to submit your report.</h2>
+  </div>
+</ion-content>
+<ion-button expand="block" routerLink="/home">Go Home</ion-button>
+<style>
+  .thank-you-message {
+    text-align: center;
+  }
+
+  .thank-you-message ion-icon {
+    font-size: 10em;
+    color: #5eee2a;
+    text-shadow: 0 0 15px #5eee2a, 0 0 20px #5eee2a, 0 0 30px #5eee2a, 0 0 40px #5eee2a, 0 0 50px #5eee2a;
+  }
+
+  .thank-you-message h1 {
+    font-size: 3em;
+    margin-top: 2em;
+    margin-bottom: 0.25em;
+    text-shadow: 0 0 15px #5eee2a, 0 0 20px #5eee2a, 0 0 30px #5eee2a, 0 0 40px #5eee2a, 0 0 50px #5eee2a;
+  }
+
+  .thank-you-message h2 {
+    font-size: 2em;
+    margin-top: 0;
+    text-shadow: 0 0 15px #5eee2a, 0 0 20px #5eee2a, 0 0 30px #5eee2a, 0 0 40px #5eee2a, 0 0 50px #5eee2a;
+  }
+
+  @keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    20% {
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+
+    40% {
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    60% {
+      opacity: 1;
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+
+    80% {
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+</style>

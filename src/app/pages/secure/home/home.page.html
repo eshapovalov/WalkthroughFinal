@@ -1,0 +1,41 @@
+<ion-header collapse="fade" [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title color="light">
+      Home
+    </ion-title>
+
+    <ion-buttons slot="primary">
+      <ion-button color="secondary" routerLink="/settings">
+        <ion-icon slot="icon-only" name="cog"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+    
+  </ion-header>
+
+  <div class="ion-padding">
+
+    <ion-header size="large">
+      <ion-label color="tertiary">Where Are you Today?</ion-label>
+      
+      <ion-header [translucent]="true">
+        <ion-toolbar>
+          <ion-title>
+            <ion-datetime-button datetime="datetime"></ion-datetime-button>
+      <ion-modal [keepContentsMounted]="true">
+        <ng-template>
+          <ion-datetime id="datetime"></ion-datetime>
+        </ng-template>
+      </ion-modal>
+
+      <img src="assets/ord.png" alt="My Image">
+
+    <!-- Skeletons -->
+    

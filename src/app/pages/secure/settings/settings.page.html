@@ -1,0 +1,143 @@
+<ion-header collapse="fade" [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button color="secondary" text="Back" defaultHref="/home">
+      </ion-back-button>
+    </ion-buttons>
+
+    <ion-title color="light">
+      Settings
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card class="ion-no-margin profile-card">
+    <ion-card-content>
+      <ion-avatar>
+        <img src="../../../../assets/eugene.jpg">
+      </ion-avatar>
+
+      <h1>
+        <ion-text color="tertiary"><strong>Eugene Hatter</strong></ion-text>
+      </h1>
+
+      <p>
+        <ion-text color="medium">EugeneHatter@gmail.com</ion-text>
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <div class="ion-padding">
+
+    <ion-list-header class="ion-list-header-small">
+      <ion-label>
+        <ion-text color="tertiary">Personal</ion-text>
+      </ion-label>
+    </ion-list-header>
+
+    <ion-list lines="full">
+      <ion-item color="primary" button routerLink="profile/edit">
+        <ion-icon slot="start" color="medium" name="person"></ion-icon>
+        <ion-label>
+          <h3>Profile</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item color="primary" button routerLink="account">
+        <ion-icon slot="start" color="medium" name="person-circle"></ion-icon>
+        <ion-label>
+          <h3>Account settings</h3>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    <hr class="hr-medium">
+
+    <ion-list-header class="ion-list-header-small">
+      <ion-label>
+        <ion-text color="tertiary">Accessibility</ion-text>
+      </ion-label>
+    </ion-list-header>
+    
+
+    <ion-list class="list-custom" lines="full">
+      <ion-item color="primary" detail="false">
+        <ion-icon slot="start" color="medium" name="scan"></ion-icon>
+        <ion-label>
+          <h3>Text to speech</h3>
+        </ion-label>
+        <ion-toggle color="tertiary" checked slot="end"></ion-toggle>
+      </ion-item>
+      <ion-item color="primary" button routerLink="devices">
+        <ion-icon slot="start" color="medium" name="phone-portrait"></ion-icon>
+        <ion-label>
+          <h3>Registered devices</h3>
+        </ion-label>
+        <ion-note slot="end" color="tertiary">3</ion-note>
+      </ion-item>
+    </ion-list>
+
+    
+
+    <hr class="hr-medium">
+
+    <ion-list-header class="ion-list-header-small">
+      <ion-label>
+        <ion-text color="tertiary">Security</ion-text>
+      </ion-label>
+    </ion-list-header>
+
+    <ion-list lines="full">
+      <ion-item color="primary" button>
+        <ion-icon slot="start" color="medium" name="lock-closed"></ion-icon>
+        <ion-label>
+          <h3>Reset Password</h3>
+        </ion-label>
+      </ion-item>
+      <ion-item color="primary" detail="false">
+        <ion-icon slot="start" color="medium" name="scan"></ion-icon>
+        <ion-label>
+          <h3>Face ID</h3>
+        </ion-label>
+        <ion-toggle color="tertiary" slot="end"></ion-toggle>
+      </ion-item>
+      <ion-item color="primary">
+        <ion-icon slot="start" color="medium" name="chatbubbles-outline"></ion-icon>
+        <ion-label>
+          <h3>Messages</h3>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    
+    <hr class="hr-medium">
+    
+
+    <ion-list-header class="ion-list-header-small">
+      <ion-label>
+        <ion-text color="tertiary">Training</ion-text>
+      </ion-label>
+    </ion-list-header>
+    <ion-item color="primary" button routerLink="backups">
+      <ion-label>Zippie</ion-label>
+    </ion-item>
+    <ion-item color="primary" detail="false">
+      <ion-label>
+        <h3>Zippie</h3>
+      </ion-label>
+      <ion-toggle color="tertiary" slot="end"></ion-toggle>
+    </ion-item>
+  </div>
+  <hr class="hr-medium">
+
+  <ion-list class="list-custom" lines="full" (click)="signOut()">
+    <ion-item color="primary" button detail=false>
+      <ion-icon slot="start" color="light" name="log-out"></ion-icon>
+      <ion-label color="light">
+        <h3>Sign out</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

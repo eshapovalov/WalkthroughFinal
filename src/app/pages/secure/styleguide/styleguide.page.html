@@ -1,0 +1,78 @@
+<ion-header collapse="fade" [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title color="light">
+      Report A Issue
+    </ion-title>
+
+    <ion-buttons slot="primary">
+      <ion-button color="secondary" routerLink="/settings">
+        <ion-icon slot="icon-only" name="cog"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="ion-padding">
+    <h2>
+      <ion-text color="tertiary">Check on your Airport</ion-text>
+    </h2>
+    <ion-card>
+     <ion-card-content>
+      <hr class="hr-medium">
+      <img alt="united airlines" src="../../../../assets/ORD_1440(0).png" />
+      
+      <ion-list>
+        <ion-list>
+          <ion-item>
+            <ion-select aria-label="Stations" placeholder="Select station">
+              <ion-select-option value="">Baggage Claim</ion-select-option>
+              <ion-select-option value="">Gates</ion-select-option>
+              <ion-select-option value="">Ticket Lobby</ion-select-option>
+              <ion-select-option value="">TSA</ion-select-option>
+  
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-select aria-label="Devices" placeholder="Select a device">
+              <ion-select-option value="">APS – Airport Print Solution </ion-select-option>
+              <ion-select-option value="">BIDS – Baggage Information Display</ion-select-option>
+              <ion-select-option value="">IER 506 – Bag Tag Printer</ion-select-option>
+              <ion-select-option value="">Cisco VoIP Phones</ion-select-option>
+              <ion-select-option value="">PBB – Passenger Boarding Bridge
+              </ion-select-option>
+              <ion-select-option value="">Samsung Printers</ion-select-option>
+              <ion-select-option value="">IER 567 – Boarding Pass Printer, Ticket Printer</ion-select-option>
+              <ion-select-option value="">LIDS – Lobby Information Displays.</ion-select-option>
+
+  
+            </ion-select>
+          </ion-item>
+          <ion-list>
+            <ion-list-header>
+              <ion-label color="light">Health Status</ion-label>
+            </ion-list-header>
+            <ion-item>
+              <ion-label color="danger">Critical</ion-label>
+              <ion-checkbox color="danger">Themed Checkbox</ion-checkbox>
+            </ion-item>
+            <ion-item>
+              <ion-label color="warning">Caution</ion-label>
+              <ion-checkbox color="warning">Themed Checkbox</ion-checkbox>
+             </ion-item>
+            <ion-item>
+              <ion-label color="success">Healthy</ion-label>
+              <ion-checkbox color="success">Themed Checkbox</ion-checkbox>
+            </ion-item>
+          
+          </ion-list>
+       
+          <ion-item>
+            <ion-label position="stacked">Description</ion-label>
+            <ion-textarea placeholder="Enter a description"></ion-textarea>
+          </ion-item>
+          
+      <ion-button  [routerLink]="['/submission-page']" color="light" size="large" >Submit</ion-button>
+
+    
+ 
